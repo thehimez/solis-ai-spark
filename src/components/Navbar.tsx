@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-3">
             <img src={logo} alt="Mastersolis Infotech" className="h-12 w-auto" />
-            <div className="flex flex-col">
+            <div className="flex flex-col font-montserrat">
               <span className="text-lg font-bold text-foreground leading-tight">MASTERSOLIS</span>
               <span className="text-sm font-semibold text-muted-foreground leading-tight">INFOTECH</span>
             </div>
