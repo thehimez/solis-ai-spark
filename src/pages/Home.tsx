@@ -3,13 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-bg.jpg";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 const Home = () => {
   const services = [
@@ -44,19 +38,22 @@ const Home = () => {
     {
       name: "Priya Sharma",
       company: "TechVentures Ltd",
-      quote: "Mastersolis helped us build a production-ready MVP in just 8 weeks. Their AI automation saved us countless hours of manual work.",
+      quote:
+        "Mastersolis helped us build a production-ready MVP in just 8 weeks. Their AI automation saved us countless hours of manual work.",
       rating: 5,
     },
     {
       name: "James Mitchell",
       company: "CloudScale Inc",
-      quote: "The team's expertise in cloud architecture is unmatched. They migrated our entire infrastructure with zero downtime.",
+      quote:
+        "The team's expertise in cloud architecture is unmatched. They migrated our entire infrastructure with zero downtime.",
       rating: 5,
     },
     {
       name: "Anita Desai",
       company: "DataFlow Solutions",
-      quote: "Professional, responsive, and deeply technical. They understand both the business and engineering sides perfectly.",
+      quote:
+        "Professional, responsive, and deeply technical. They understand both the business and engineering sides perfectly.",
       rating: 5,
     },
   ];
@@ -66,11 +63,11 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-hero opacity-90" />
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        
+
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
@@ -81,9 +78,9 @@ const Home = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-6 max-w-3xl mx-auto leading-relaxed">
-              We partner with forward-thinking teams to build intelligent software products that scale.
-              From concept to deployment, we combine engineering excellence with AI-driven automation
-              to deliver solutions that work smarter, not harder.
+              We partner with forward-thinking teams to build intelligent software products that scale. From concept to
+              deployment, we combine engineering excellence with AI-driven automation to deliver solutions that work
+              smarter, not harder.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
@@ -93,7 +90,11 @@ const Home = () => {
                 </Button>
               </Link>
               <Link to="/services">
-                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow"
+                >
                   Explore Services
                 </Button>
               </Link>
@@ -206,10 +207,12 @@ const Home = () => {
               { number: "50+", label: "Team Members" },
               { number: "15+", label: "Years Experience" },
             ].map((stat, index) => (
-              <div key={index} className="animate-in fade-in zoom-in duration-700" style={{ animationDelay: `${index * 150}ms` }}>
-                <div className="text-4xl md:text-5xl font-bold text-primary-foreground mb-2">
-                  {stat.number}
-                </div>
+              <div
+                key={index}
+                className="animate-in fade-in zoom-in duration-700"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <div className="text-4xl md:text-5xl font-bold text-primary-foreground mb-2">{stat.number}</div>
                 <div className="text-primary-foreground/80">{stat.label}</div>
               </div>
             ))}
