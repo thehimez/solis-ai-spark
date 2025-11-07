@@ -84,7 +84,11 @@ const Home = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
-                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow"
+                >
                   Work with Us
                   <ArrowRight className="ml-2" size={20} />
                 </Button>
