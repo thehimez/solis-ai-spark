@@ -1,4 +1,4 @@
-import { Code, Smartphone, Cloud, Brain, Database, Shield, Zap, Users } from "lucide-react";
+import { Code, Brain, Cloud, Palette, BarChart3, CheckSquare } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -7,51 +7,69 @@ const Services = () => {
   const services = [
     {
       icon: Code,
-      title: "Web Development",
-      description: "Custom web applications built with modern frameworks and technologies. We create responsive, scalable, and secure web solutions that deliver exceptional user experiences.",
-      features: ["React & TypeScript", "Node.js Backend", "Progressive Web Apps", "E-commerce Solutions"],
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile App Development",
-      description: "Native and cross-platform mobile applications that engage users and drive business growth. Beautiful interfaces combined with powerful functionality.",
-      features: ["iOS & Android", "React Native", "Flutter", "App Store Optimization"],
-    },
-    {
-      icon: Cloud,
-      title: "Cloud Solutions",
-      description: "Scalable cloud infrastructure and services that grow with your business. We leverage AWS, Azure, and Google Cloud for optimal performance.",
-      features: ["Cloud Migration", "DevOps & CI/CD", "Serverless Architecture", "Cloud Security"],
+      title: "Product Engineering",
+      description: "We build scalable, modern applications from scratch. Our full-stack expertise ensures your product is production-ready, maintainable, and future-proof.",
+      benefits: [
+        "End-to-end development lifecycle",
+        "Agile methodology with fast iterations",
+        "Clean, maintainable codebase"
+      ],
+      deliverables: ["MVP Development", "Full Product Launch"]
     },
     {
       icon: Brain,
-      title: "AI & Machine Learning",
-      description: "Intelligent automation and AI-powered features that transform your operations. From chatbots to predictive analytics, we bring AI to your business.",
-      features: ["Natural Language Processing", "Computer Vision", "Predictive Analytics", "AI Chatbots"],
+      title: "AI & Automation",
+      description: "Leverage cutting-edge AI to automate repetitive tasks and unlock insights. From chatbots to intelligent workflows, we make your operations smarter.",
+      benefits: [
+        "Custom AI model integration",
+        "Workflow automation that saves hours",
+        "Predictive analytics for decision-making"
+      ],
+      deliverables: ["AI Chatbot Implementation", "Process Automation Suite"]
     },
     {
-      icon: Database,
-      title: "Data Analytics",
-      description: "Turn your data into actionable insights with our comprehensive analytics solutions. Make informed decisions backed by powerful data visualization.",
-      features: ["Business Intelligence", "Data Visualization", "Real-time Analytics", "Custom Dashboards"],
+      icon: Cloud,
+      title: "Cloud & DevOps",
+      description: "Deploy with confidence using our cloud infrastructure expertise. We design, migrate, and manage scalable systems on AWS, Azure, and GCP.",
+      benefits: [
+        "Zero-downtime deployments",
+        "Auto-scaling infrastructure",
+        "Monitoring and incident response"
+      ],
+      deliverables: ["Cloud Migration Plan", "CI/CD Pipeline Setup"]
     },
     {
-      icon: Shield,
-      title: "Cybersecurity",
-      description: "Protect your digital assets with our comprehensive security solutions. We ensure your applications and data remain secure against evolving threats.",
-      features: ["Security Audits", "Penetration Testing", "Compliance Management", "Incident Response"],
+      icon: Palette,
+      title: "UI/UX Design",
+      description: "We create intuitive, beautiful interfaces that users love. Our design process is research-driven, ensuring every pixel serves a purpose.",
+      benefits: [
+        "User-centered design approach",
+        "Responsive across all devices",
+        "Design systems for consistency"
+      ],
+      deliverables: ["Wireframes & Prototypes", "High-Fidelity UI Kit"]
     },
     {
-      icon: Zap,
-      title: "Digital Transformation",
-      description: "Modernize your business processes with our digital transformation services. We help you leverage technology to improve efficiency and competitiveness.",
-      features: ["Process Automation", "Legacy System Migration", "Digital Strategy", "Change Management"],
+      icon: BarChart3,
+      title: "Data & Analytics",
+      description: "Turn raw data into actionable insights with custom dashboards and reports. We help you make data-driven decisions with confidence.",
+      benefits: [
+        "Real-time data visualization",
+        "Custom reporting dashboards",
+        "Data pipeline architecture"
+      ],
+      deliverables: ["Analytics Dashboard", "Business Intelligence Reports"]
     },
     {
-      icon: Users,
-      title: "Consulting & Support",
-      description: "Expert guidance and ongoing support for your technology initiatives. Our consultants bring deep expertise across various industries and technologies.",
-      features: ["Technical Consulting", "Architecture Design", "24/7 Support", "Training & Workshops"],
+      icon: CheckSquare,
+      title: "QA & Testing",
+      description: "Ship bug-free software with our rigorous testing processes. From unit tests to end-to-end automation, we ensure quality at every stage.",
+      benefits: [
+        "Automated test coverage",
+        "Performance and load testing",
+        "Security vulnerability scanning"
+      ],
+      deliverables: ["Test Automation Framework", "QA Strategy Document"]
     },
   ];
 
@@ -83,14 +101,35 @@ const Services = () => {
                 <div className="flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-foreground">{service.title}</h3>
                   <p className="text-muted-foreground mb-4 leading-relaxed">{service.description}</p>
-                  <div className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center text-sm text-muted-foreground">
-                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2" />
-                        {feature}
-                      </div>
-                    ))}
+                  
+                  <div className="mb-4">
+                    <h4 className="text-sm font-semibold text-foreground mb-2">Key Benefits:</h4>
+                    <ul className="space-y-2">
+                      {service.benefits.map((benefit, idx) => (
+                        <li key={idx} className="flex items-start text-sm text-muted-foreground">
+                          <div className="w-1.5 h-1.5 bg-accent rounded-full mr-2 mt-1.5 flex-shrink-0" />
+                          {benefit}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
+
+                  <div className="mb-4">
+                    <h4 className="text-sm font-semibold text-foreground mb-2">Sample Deliverables:</h4>
+                    <div className="flex flex-wrap gap-2">
+                      {service.deliverables.map((deliverable, idx) => (
+                        <span key={idx} className="text-xs bg-secondary px-3 py-1 rounded-full text-secondary-foreground">
+                          {deliverable}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <Link to="/contact">
+                    <Button variant="outline" size="sm" className="mt-2">
+                      Talk to Us
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </Card>

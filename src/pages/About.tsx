@@ -89,21 +89,80 @@ const About = () => {
           </div>
         </div>
 
-        {/* Journey Section */}
-        <div className="bg-gradient-hero rounded-2xl p-12 text-center shadow-medium">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+        {/* Company Milestones */}
+        <div className="bg-gradient-hero rounded-2xl p-12 mb-20 shadow-medium">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground text-center mb-12">
             Our Journey
           </h2>
-          <p className="text-lg text-primary-foreground/90 max-w-4xl mx-auto leading-relaxed">
-            Founded with a vision to bridge the gap between business challenges and technology solutions, 
-            Mastersolis Infotech has grown from a small startup to a trusted partner for businesses worldwide. 
-            With over 15 years of experience, we've completed 500+ successful projects across various industries, 
-            always staying at the forefront of technological innovation.
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="text-center">
+              <div className="text-5xl font-bold text-accent mb-3">2010</div>
+              <h3 className="text-xl font-semibold text-primary-foreground mb-2">Founded</h3>
+              <p className="text-primary-foreground/80">Started with a vision to innovate</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold text-accent mb-3">200+</div>
+              <h3 className="text-xl font-semibold text-primary-foreground mb-2">Clients Served</h3>
+              <p className="text-primary-foreground/80">Fortune 500 to startups</p>
+            </div>
+            <div className="text-center">
+              <div className="text-5xl font-bold text-accent mb-3">500+</div>
+              <h3 className="text-xl font-semibold text-primary-foreground mb-2">Projects Delivered</h3>
+              <p className="text-primary-foreground/80">Across 15+ industries</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Team Section */}
+        <div className="mb-20">
+          <h2 className="text-4xl font-bold text-center mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Meet Our Leadership
+          </h2>
+          <p className="text-xl text-muted-foreground text-center mb-12">
+            The team driving innovation and excellence
           </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                name: "Rajesh Kumar",
+                role: "CEO & Founder",
+                bio: "Serial entrepreneur with 20+ years in tech. Previously led engineering at two unicorns. Passionate about building products that matter.",
+              },
+              {
+                name: "Ananya Singh",
+                role: "CTO",
+                bio: "Ex-Google engineer specializing in distributed systems and AI. MIT grad. Loves solving hard problems at scale.",
+              },
+              {
+                name: "Michael Chen",
+                role: "Lead Designer",
+                bio: "Award-winning product designer. Worked with Apple and Airbnb. Believes great design is invisible.",
+              },
+              {
+                name: "Priya Nair",
+                role: "Head of Engineering",
+                bio: "Full-stack architect with a DevOps mindset. Built platforms serving 50M+ users. Open-source contributor.",
+              },
+            ].map((member, index) => (
+              <Card
+                key={index}
+                className="p-6 hover:shadow-medium transition-all duration-300 hover:-translate-y-2 bg-card animate-in fade-in slide-in-from-bottom-8 duration-700"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="w-20 h-20 bg-gradient-accent rounded-full mb-4 mx-auto flex items-center justify-center">
+                  <Users className="text-accent-foreground" size={32} />
+                </div>
+                <h3 className="text-xl font-semibold text-foreground text-center mb-1">{member.name}</h3>
+                <p className="text-sm text-accent text-center mb-3">{member.role}</p>
+                <p className="text-muted-foreground text-sm leading-relaxed">{member.bio}</p>
+              </Card>
+            ))}
+          </div>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
             { number: "15+", label: "Years of Excellence" },
             { number: "50+", label: "Expert Team Members" },
