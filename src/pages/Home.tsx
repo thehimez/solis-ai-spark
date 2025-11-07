@@ -90,7 +90,6 @@ const Home = () => {
                   className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-glow"
                 >
                   Work with Us
-                  <ArrowRight className="ml-2" size={20} />
                 </Button>
               </Link>
               <Link to="/services">
