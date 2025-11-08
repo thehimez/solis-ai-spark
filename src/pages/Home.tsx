@@ -71,7 +71,7 @@ const Home = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-              Innovating the furture with AI and Automation
+              Innovating the Future with AI and Automation
               <br />
               <span className="bg-gradient-to-r from-accent to-white bg-clip-text text-transparent"></span>
             </h1>
