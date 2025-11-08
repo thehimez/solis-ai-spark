@@ -15,9 +15,9 @@ const Home = () => {
     },
     {
       icon: Zap,
-      title: "AI Automation",
-      description: "Intelligent workflows that save time and reduce manual effort.",
-      benefits: ["Process automation", "Smart integrations", "AI-powered insights"],
+      title: "Business Automation",
+      description: "Optimize performance with intelligent process Integration.",
+      benefits: ["Process automation", "Smart integrations"],
     },
     {
       icon: Cloud,
