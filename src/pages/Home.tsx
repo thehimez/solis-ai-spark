@@ -76,7 +76,7 @@ const Home = () => {
               <span className="bg-gradient-to-r from-accent to-white bg-clip-text text-transparent"></span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-6 max-w-3xl mx-auto leading-relaxed">
-              "We blend Engineering excellence with AI and automation to deliver smater , scalable digital solutions"
+              We blend Engineering excellence with AI and automation to deliver smater , scalable digital solutions
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
