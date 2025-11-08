@@ -117,7 +117,7 @@ const Home = () => {
               Our Expertise
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Driving you digital transformation forword
+              Driving you digital transformation forward
             </p>
           </div>
 
