@@ -35,30 +35,30 @@ const Auth = () => {
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{ backgroundImage: `url(${heroImage})` }}
         />
-        
+
         <div className="relative z-10 flex flex-col justify-center px-12 xl:px-16">
           <div className="mb-8 animate-in fade-in slide-in-from-left-4 duration-1000">
-            <img 
-              src="/src/assets/mastersolis-logo.png" 
-              alt="Mastersolis Logo" 
+            <img
+              src="/src/assets/mastersolis-logo.png"
+              alt="Mastersolis Logo"
               className="h-12 mb-8 brightness-0 invert"
             />
-            
+
             <h1 className="text-4xl xl:text-5xl font-bold text-primary-foreground mb-4 leading-tight">
               Welcome to the Future of
               <span className="block bg-gradient-to-r from-accent to-white bg-clip-text text-transparent">
                 AI & Automation
               </span>
             </h1>
-            
+
             <p className="text-lg xl:text-xl text-primary-foreground/90 mb-8 leading-relaxed">
-              Join us in innovating digital excellence. Access cutting-edge tools, collaborate with experts, and transform your ideas into reality.
+              Join us in innovating digital excellence.Collaborate with experts, and transform your ideas into reality.
             </p>
           </div>
 
           <div className="space-y-6 animate-in fade-in slide-in-from-left-4 duration-1000 delay-200">
             {features.map((feature, index) => (
-              <Card 
+              <Card
                 key={index}
                 className="bg-background/10 backdrop-blur-sm border-primary-foreground/20 p-6 hover:bg-background/20 transition-all duration-300"
               >
@@ -67,12 +67,8 @@ const Auth = () => {
                     <feature.icon className="text-accent-foreground" size={24} />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-primary-foreground mb-1">
-                      {feature.title}
-                    </h3>
-                    <p className="text-primary-foreground/80 text-sm">
-                      {feature.description}
-                    </p>
+                    <h3 className="text-lg font-semibold text-primary-foreground mb-1">{feature.title}</h3>
+                    <p className="text-primary-foreground/80 text-sm">{feature.description}</p>
                   </div>
                 </div>
               </Card>
@@ -101,28 +97,21 @@ const Auth = () => {
         <div className="w-full max-w-md animate-in fade-in slide-in-from-right-4 duration-1000">
           {/* Mobile Logo */}
           <div className="flex justify-center mb-8 lg:hidden">
-            <img 
-              src="/src/assets/mastersolis-logo.png" 
-              alt="Mastersolis Logo" 
-              className="h-10"
-            />
+            <img src="/src/assets/mastersolis-logo.png" alt="Mastersolis Logo" className="h-10" />
           </div>
 
           <div className="text-center mb-8">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-accent rounded-full mb-4 shadow-glow">
               <Sparkles className="text-accent-foreground" size={32} />
             </div>
-            <h2 className="text-3xl font-bold text-foreground mb-2">
-              {isSignIn ? "Welcome Back" : "Get Started"}
-            </h2>
+            <h2 className="text-3xl font-bold text-foreground mb-2">{isSignIn ? "Welcome Back" : "Get Started"}</h2>
             <p className="text-muted-foreground">
-              {isSignIn 
-                ? "Sign in to access your dashboard and projects" 
-                : "Create your account and start building today"
-              }
+              {isSignIn
+                ? "Sign in to access your dashboard and projects"
+                : "Create your account and start building today"}
             </p>
           </div>
-          
+
           <div className="flex gap-2 mb-8 justify-center">
             <Button
               variant={isSignIn ? "default" : "outline"}
@@ -141,11 +130,7 @@ const Auth = () => {
           </div>
 
           <div className="flex justify-center">
-            {isSignIn ? (
-              <SignIn routing="hash" signUpUrl="#" />
-            ) : (
-              <SignUp routing="hash" signInUrl="#" />
-            )}
+            {isSignIn ? <SignIn routing="hash" signUpUrl="#" /> : <SignUp routing="hash" signInUrl="#" />}
           </div>
 
           {/* Mobile Features */}
