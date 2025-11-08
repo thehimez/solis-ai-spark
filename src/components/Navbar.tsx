@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SignedIn, SignedOut, SignInButton, SignUpButton, UserButton } from "@clerk/clerk-react";
 import logo from "@/assets/mastersolis-logo.png";
 
 const Navbar = () => {
@@ -47,6 +48,21 @@ const Navbar = () => {
                 </Button>
               </Link>
             ))}
+            
+            {/* Auth Buttons */}
+            <div className="ml-4 flex items-center gap-2">
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <Button variant="ghost">Sign In</Button>
+                </SignInButton>
+                <SignUpButton mode="modal">
+                  <Button variant="default">Sign Up</Button>
+                </SignUpButton>
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -76,6 +92,28 @@ const Navbar = () => {
                 </Button>
               </Link>
             ))}
+            
+            {/* Mobile Auth Buttons */}
+            <div className="pt-4 border-t border-border space-y-2">
+              <SignedOut>
+                <SignInButton mode="modal">
+                  <Button variant="ghost" className="w-full justify-start">
+                    Sign In
+                  </Button>
+                </SignInButton>
+                <SignUpButton mode="modal">
+                  <Button variant="default" className="w-full">
+                    Sign Up
+                  </Button>
+                </SignUpButton>
+              </SignedOut>
+              <SignedIn>
+                <div className="flex items-center gap-2 px-3 py-2">
+                  <UserButton />
+                  <span className="text-sm text-muted-foreground">Account</span>
+                </div>
+              </SignedIn>
+            </div>
           </div>
         )}
       </div>
