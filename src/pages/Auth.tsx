@@ -42,7 +42,7 @@ const Auth = () => {
             <img
               src={logo}
               alt="Mastersolis Logo"
-              className="h-12 mb-8 brightness-0 invert"
+              className="h-20 mb-8 drop-shadow-lg"
             />
 
             <h1 className="text-4xl xl:text-5xl font-bold text-primary-foreground mb-4 leading-tight">
