@@ -73,12 +73,10 @@ const Home = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
               Innovating the furture with AI and Automation
               <br />
-              <span className="bg-gradient-to-r from-accent to-white bg-clip-text text-transparent">
-                with AI & Automation
-              </span>
+              <span className="bg-gradient-to-r from-accent to-white bg-clip-text text-transparent"></span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-6 max-w-3xl mx-auto leading-relaxed">
-              "We blend Engineering excellence with AI and automation to deliver smater , scaleable digital solutions"
+              "We blend Engineering excellence with AI and automation to deliver smater , scalable digital solutions"
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
@@ -116,7 +114,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Our experties
+              Our Expertise
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Driving you digital transformation forword
@@ -165,7 +163,7 @@ const Home = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               Innovation in Action
             </h2>
-            <p className="text-xl text-muted-foreground">Smart. Scaleable. Furture-ready</p>
+            <p className="text-xl text-muted-foreground">Smart. Scalable. Future-ready.</p>
           </div>
 
           <div className="max-w-5xl mx-auto">
@@ -226,7 +224,7 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Our clients. Their Success
+              Our Clients , their Success.
             </h2>
             <p className="text-xl text-muted-foreground">Proof that innovation and automation create real impact.</p>
           </div>
