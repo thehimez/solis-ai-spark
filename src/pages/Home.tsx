@@ -71,16 +71,14 @@ const Home = () => {
         <div className="relative z-10 container mx-auto px-4 text-center">
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-6 leading-tight">
-              Building Smart Digital Products
+              Innovating the furture with AI and Automation
               <br />
               <span className="bg-gradient-to-r from-accent to-white bg-clip-text text-transparent">
                 with AI & Automation
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-6 max-w-3xl mx-auto leading-relaxed">
-              We partner with forward-thinking teams to build intelligent software products that scale. From concept to
-              deployment, we combine engineering excellence with AI-driven automation to deliver solutions that work
-              smarter, not harder.
+              "We blend Engineering excellence with AI and automation to deliver smater , scaleable digital solutions"
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
@@ -118,10 +116,10 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-in fade-in slide-in-from-bottom-4 duration-700">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              What We Do
+              Our experties
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Core services designed to accelerate your digital transformation
+              Driving you digital transformation forword
             </p>
           </div>
 
@@ -165,9 +163,9 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Recent Work
+              Innovation in Action
             </h2>
-            <p className="text-xl text-muted-foreground">Showcasing our latest projects and innovations</p>
+            <p className="text-xl text-muted-foreground">Smart. Scaleable. Furture-ready</p>
           </div>
 
           <div className="max-w-5xl mx-auto">
@@ -228,9 +226,9 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              What Our Clients Say
+              Our clients. Their Success
             </h2>
-            <p className="text-xl text-muted-foreground">Don't just take our word for it</p>
+            <p className="text-xl text-muted-foreground">Proof that innovation and automation create real impact.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
