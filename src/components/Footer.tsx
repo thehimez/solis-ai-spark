@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from "lucide-react";
+import logo from "@/assets/mastersolis-logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,7 +13,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <div className="w-10 h-10 bg-gradient-hero rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">M</span>
+                <img src={logo} alt="Mastersolis Infotech" className="h-12 w-auto" />
               </div>
               <span className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
                 Mastersolis
@@ -93,9 +94,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-sm text-muted-foreground">
-            © {currentYear} Mastersolis Infotech. All rights reserved.
-          </p>
+          <p className="text-sm text-muted-foreground">© {currentYear} Mastersolis Infotech. All rights reserved.</p>
         </div>
       </div>
     </footer>
