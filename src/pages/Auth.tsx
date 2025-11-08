@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Code, Zap, Cloud, CheckCircle2, Sparkles } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import heroImage from "@/assets/hero-bg.jpg";
+import logo from "@/assets/mastersolis-logo.png";
 
 const Auth = () => {
   const [isSignIn, setIsSignIn] = useState(true);
@@ -39,7 +40,7 @@ const Auth = () => {
         <div className="relative z-10 flex flex-col justify-center px-12 xl:px-16">
           <div className="mb-8 animate-in fade-in slide-in-from-left-4 duration-1000">
             <img
-              src="/src/assets/mastersolis-logo.png"
+              src={logo}
               alt="Mastersolis Logo"
               className="h-12 mb-8 brightness-0 invert"
             />
@@ -97,7 +98,7 @@ const Auth = () => {
         <div className="w-full max-w-md animate-in fade-in slide-in-from-right-4 duration-1000">
           {/* Mobile Logo */}
           <div className="flex justify-center mb-8 lg:hidden">
-            <img src="/src/assets/mastersolis-logo.png" alt="Mastersolis Logo" className="h-10" />
+            <img src={logo} alt="Mastersolis Logo" className="h-10" />
           </div>
 
           <div className="text-center mb-8">
