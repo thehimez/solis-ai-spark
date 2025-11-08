@@ -14,9 +14,11 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <div>
                 <img src={logo} alt="Mastersolis Infotech" className="h-12 w-auto" />
+              </div>
               <div className="flex flex-col">
-              <span className="text-lg font-bold text-foreground leading-tight">MASTERSOLIS</span>
-              <span className="text-sm font-semibold text-muted-foreground leading-tight">INFOTECH</span>
+                <span className="text-lg font-bold text-foreground leading-tight">MASTERSOLIS</span>
+                <span className="text-sm font-semibold text-muted-foreground leading-tight">INFOTECH</span>
+              </div>
             </div>
             <p className="text-muted-foreground text-sm">
               Empowering businesses through innovative technology solutions.
